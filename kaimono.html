@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>買い物チェックリスト</title>
+  <style>
+    :root { --gap: 12px; --pad: 12px; --radius: 10px; --border: 1px solid #ddd; --bg: #fff; --muted:#666; }
+    * { box-sizing: border-box; }
+    body { font: 16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif; margin: 0; padding: var(--pad); background: #f7f7f7; }
+    .container { max-width: 720px; margin: 0 auto; }
+    section { background: var(--bg); border: var(--border); border-radius: var(--radius); padding: var(--pad); margin-bottom: var(--gap); }
+    h1 { font-size: 20px; margin: 0 0 8px; }
+    h2 { font-size: 18px; margin: 0 0 6px; }
+    .store { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .store a { color: #0066cc; word-break: break-all; }
+    .small { font-size: 12px; color: var(--muted); }
+
+    table { width: 100%; border-collapse: collapse; table-layout: fixed; }
+    th, td { border: var(--border); padding: 8px; vertical-align: top; background: #fff; }
+    th { position: sticky; top: 0; background: #fafafa; z-index: 1; }
+    tbody tr:nth-child(odd) td { background: #fcfcfc; }
+    td:nth-child(1) { width: 30%; }
+    td:nth-child(2) { width: 30%; }
+    td:nth-child(3) { width: 20%; }
+    td:nth-child(4) { width: 20%; word-break: break-all; }
+    .note { white-space: pre-wrap; }
+
+    @media (prefers-color-scheme: dark) {
+      body { background: #111; color: #eee; }
+      section { background: #1a1a1a; border-color: #333; }
+      th, td { border-color: #333; }
+      th { background: #111; }
+      a { color: #7db3ff; }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>買い物チェックリスト</h1>
+      <p class="small">家族で共有する用。スマホで見やすいシンプル版。</p>
+    </header>
+
+    <section>
+      <ul>
+        <li class="store"><strong>くずはモール</strong> — <a href="https://kuzuha-mall.com/" target="_blank" rel="noopener">公式サイト</a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>買うものリスト</h2>
+      <table aria-label="買うものリスト">
+        <thead>
+          <tr>
+            <th>店舗名</th>
+            <th>場所</th>
+            <th>名前</th>
+            <th>金額</th>
+            <th>リンク</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>aena</td>
+            <td>本館3F 中央</td>
+            <td>いも？</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>スタンダードプロダクツ</td>
+            <td>本館3F 西</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>3Coins</td>
+            <td>本館2F 西</td>
+            <td>オイルスプレー, 温野菜, 伸縮トレー, 伸縮カトラリー, 冷蔵庫トレー, 冷凍庫トレー</td>
+            <td></td>
+            <td><a href="https://www.palcloset.jp/3coins/?srsltid=AfmBOooine0xCaYmohrddQPaIR9NpkekzNbO0ZtOXBmcdXWseIZ6TryC" target="_blank" rel="noopener">商品ページ</a></td>
+          </tr>
+          <tr>
+            <td>フランフラン</td>
+            <td></td>
+            <td>隣の3Coinsのついで</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>ルピシア</td>
+            <td>本館1F 中央</td>
+            <td>紅茶</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>トイザらス</td>
+            <td>南館2F 東</td>
+            <td>ビジーボード</td>
+            <td>3400</td>
+            <td><a href="https://www.amazon.co.jp/dp/B0DLFW2GN1/?coliid=I1HEDA9A57ODSM&colid=3K4SV7MVCUZSG&psc=1&ref_=list_c_wl_lv_ov_lig_dp_it" target="_blank" rel="noopener">Amazon</a></td>
+          </tr>
+          <tr>
+            <td>トイザらス</td>
+            <td>南館2F 東</td>
+            <td>いたずら</td>
+            <td>4100</td>
+            <td><a href="https://www.amazon.co.jp/dp/B0BW2L5WVC/?coliid=I11UD1B504O7TL&colid=3K4SV7MVCUZSG&ref_=list_c_wl_lv_ov_lig_dp_it&th=1" target="_blank" rel="noopener">Amazon</a></td>
+          </tr>
+          <tr>
+            <td>ニトリ デコホーム</td>
+            <td>南館1F 西</td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>備考</h2>
+      <div class="note">
+・駐車場は最初の1時間無料、1円で3h、2000円で4h無料（平日）
+・本館1Fで美濃焼
+・食料品はイオン？
+      </div>
+    </section>
+    <footer class="small">最終更新：<time>2025-08-28</time></footer>
+  </div>
+</body>
+</html>
